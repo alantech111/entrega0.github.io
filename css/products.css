@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Estilos para las tarjetas de productos */
+.producto-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  background-color: white;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producto-imagen {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.producto-body {
+  padding: 20px;
+}
+
+.producto-titulo {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  min-height: 60px;
+}
+
+.producto-descripcion {
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 70px;
+}
+
+.producto-precio {
+  font-weight: 700;
+  color: #e74c3c;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.producto-vendidos {
+  color: #3498db;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.producto-vendidos i {
+  margin-right: 5px;
+}
+
+/* Estilos para el header */
+header {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el dropdown de ordenamiento */
+.form-select {
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  padding: 8px 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .producto-imagen {
+    height: 150px;
+  }
+  
+  .producto-titulo {
+    font-size: 1.1rem;
+    min-height: auto;
+  }
+  
+  .producto-precio {
+    font-size: 1.2rem;
+  }
+  
+  .producto-descripcion {
+    min-height: auto;
+  }
+}

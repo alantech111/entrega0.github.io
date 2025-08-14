@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eMercado - Catálogo de Autos</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/products.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-primary text-white py-3">
+    <div class="container">
+      <h1 class="mb-0">eMercado</h1>
+      <p class="mb-0">Los mejores autos al mejor precio</p>
+    </div>
+  </header>
+
+  <main class="py-4">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <h2 id="category-title">Autos</h2>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <select class="form-select" id="sort-dropdown" style="max-width: 200px; display: inline-block;">
+            <option value="relevantes">Más relevantes</option>
+            <option value="precio-asc">Precio: menor a mayor</option>
+            <option value="precio-desc">Precio: mayor a menor</option>
+            <option value="nombre-asc">Nombre: A-Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row" id="productos-container">
+        <!-- Los productos se cargarán aquí dinámicamente -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light py-4 mt-4">
+    <div class="container text-center">
+      <p>© 2025 eMercado - Todos los derechos reservados</p>
+      <p class="mb-0">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jóvenes a Programar</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
